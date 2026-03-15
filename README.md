@@ -1,11 +1,14 @@
 # VectorShift Pipeline Builder
 
+![VectorShift Preview](./public/app_overview.png)
+
 VectorShift Pipeline Builder is a comprehensive, interactive node-based visual editor designed for constructing and evaluating Directed Acyclic Graphs (DAGs). Build pipelines visually to connect inputs, language models (LLMs), text transformations, filters, APIs, and outputs.
 
 ## 🚀 Key Features
 
 ### **Phase 1: Core Infrastructure**
 - **Toast Notifications:** Animated toast notifications for success, error, info, and warnings.
+  <br/>![Save Toast](./public/save_toast.png)
 - **Save/Load:** Persist pipelines directly to `localStorage`, preventing data loss on page refresh.
 - **Auto-save:** Debounced auto-save triggers on every state change.
 - **Export/Import:** Download pipelines as JSON files and import them back at any time.
@@ -14,11 +17,13 @@ VectorShift Pipeline Builder is a comprehensive, interactive node-based visual e
 - **Undo/Redo:** 50-entry history stack using Zustand for full state recovery.
 - **Keyboard Shortcuts:** Full suite of editor shortcuts (e.g., `Ctrl+S`, `Ctrl+Z`, `Ctrl+Y`, `Ctrl+C/V/D/A`).
 - **Context Menu:** Right-click nodes or the canvas for quick contextual actions (Duplicate, Delete, Copy, Paste).
+  <br/>![Context Menu](./public/context_menu.png)
 - **Copy/Paste:** Seamlessly duplicate node groups with offset positioning.
 
 ### **Phase 3: Validation & Feedback**
 - **Connection Validation:** Prevents self-connections, duplicate edges, and type mismatches natively.
 - **Inline Results Panel:** Beautifully animated statistics panel for Pipeline Submission (Nodes, Edges, DAG validity).
+  <br/>![Submit Results](./public/submit_results.png)
 - **Orphan Detection:** Identifies and reports disconnected (orphan) nodes during submission.
 
 ### **Phase 4: Backend Capabilities**
